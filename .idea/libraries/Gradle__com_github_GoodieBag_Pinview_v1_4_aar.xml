@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.GoodieBag:Pinview:v1.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bd55ffd2ddcf4448b22640cb8f484db5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bd55ffd2ddcf4448b22640cb8f484db5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bd55ffd2ddcf4448b22640cb8f484db5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4dbb73ae92f822dc5715bbe41bc250fa/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4dbb73ae92f822dc5715bbe41bc250fa/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4dbb73ae92f822dc5715bbe41bc250fa/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e3243b0ba6a1b91161eb9e2a883078d4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e3243b0ba6a1b91161eb9e2a883078d4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e3243b0ba6a1b91161eb9e2a883078d4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.GoodieBag/Pinview/v1.4/ea0c7126b26a6ab67ee0c3030fd56f78ccf097c8/Pinview-v1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

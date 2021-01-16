@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-share:5.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e1e4927dad6629b72dd95e0a17f7240e/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e1e4927dad6629b72dd95e0a17f7240e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e1e4927dad6629b72dd95e0a17f7240e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13a46f861064c8706a9e88052bab6e1e/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13a46f861064c8706a9e88052bab6e1e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13a46f861064c8706a9e88052bab6e1e/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/acbf2ba2c2a502f3e909a949f8315358/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/acbf2ba2c2a502f3e909a949f8315358/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/acbf2ba2c2a502f3e909a949f8315358/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-share/5.0.1/86554cdc30b7a69ddef82e553d7fe550ab7f56b4/facebook-share-5.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

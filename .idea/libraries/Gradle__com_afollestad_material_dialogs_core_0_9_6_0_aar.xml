@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.afollestad.material-dialogs:core:0.9.6.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04f155c036d9e4c377ab0b284a4342b4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04f155c036d9e4c377ab0b284a4342b4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04f155c036d9e4c377ab0b284a4342b4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c36f24b103ecc8df64812265ec35867/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c36f24b103ecc8df64812265ec35867/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c36f24b103ecc8df64812265ec35867/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/69be802ba19cf94fa700739c41e97e12/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/69be802ba19cf94fa700739c41e97e12/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/69be802ba19cf94fa700739c41e97e12/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad.material-dialogs/core/0.9.6.0/138d1054166753aa2b5306e5ae484d03e9974c81/core-0.9.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

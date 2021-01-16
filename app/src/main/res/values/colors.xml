@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fb4629</color>
+    <color name="colorPrimaryDark">#E62B1E</color>
+    <color name="colorAccent">#FF4C3F</color>
+
+    <color name="cream">#ede9da</color>
+
+    <color name="hintTextColor">#999999</color>
+    <color name="buttonTextColor">#00d290</color>
+    <color name="dashboardDeepColor">#5c13f8</color>
+    <color name="dashboardlightColor">#9c4cf9</color>
+    <color name="lightGrayColor">#ececec</color>
+    <color name="lightGrayColor1">#F5F5F5</color>
+    <color name="lightGrayColor2">#FAF7F7</color>
+    <color name="white_background">#ffff</color>
+    <color name="text_colo_black">#070707</color>
+    <color name="text_view_color">#929292</color>
+    <color name="border_color">#e3e3e3</color>
+    <color name="yellow">#ffd800</color>
+    <color name="button_color">#00d290</color>
+    <color name="dark_gray_text_color">#505050</color>
+    <color name="cardview_background">#ececec</color>
+    <color name="colorText_available">#558b2f</color>
+    <color name="medium_gray">#4E4A4A</color>
+    <color name="red_error">#e93733</color>
+    <color name="red">#6200ee</color>
+    <color name="toolbar_color">#5e6eed</color>
+    <color name="broderColor">#dbdada</color>
+    <color name="background_sendPackage">#fdfdfd</color>
+    <color name="subtitleColor">#4285f4</color>
+    <color name="graytitle">#808080</color>
+    <color name="serchviewcolor">#f3f3f5</color>
+    <color name="backgroundColor_white_translucent">#80FFFFFF</color>
+    <color name="colorTranslucentButton">#4a59fe</color>
+    <color name="red_dark">#3700b3</color>
+    <color name="button_and_vespac_red_color">#f33829</color>
+    <color name="green_button_color">#10c4d3</color>
+    <color name="recycler_view_background_color">#ececec</color>
+
+    <color name="refresh_progress_1">#01716a</color>
+    <color name="refresh_progress_2">#01bcb0</color>
+    <color name="refresh_progress_3">#03faeb</color>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:text="Review &amp; Ratings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="textImeMultiLine"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:contentDescription="@string/app_name"/>
+
+    <EditText
+            android:id="@+id/remarks"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/roboto_light"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="Enter Remarks"/>
+
+    <RatingBar
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:saveEnabled="true"
+            android:numStars="5"
+            android:stepSize="0.5"/>
+
+</LinearLayout>

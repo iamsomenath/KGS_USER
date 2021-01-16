@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: com.payumoney.core:payumoney-sdk:7.4.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/075752d7226879d9f8fd21aed1f8a5ac/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e21cb3ed6f5f31bf1da9722efbe5b39e/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/802711839987a76ff9af426293c86268/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/075752d7226879d9f8fd21aed1f8a5ac/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/075752d7226879d9f8fd21aed1f8a5ac/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/075752d7226879d9f8fd21aed1f8a5ac/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e21cb3ed6f5f31bf1da9722efbe5b39e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e21cb3ed6f5f31bf1da9722efbe5b39e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e21cb3ed6f5f31bf1da9722efbe5b39e/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/802711839987a76ff9af426293c86268/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/802711839987a76ff9af426293c86268/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/802711839987a76ff9af426293c86268/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.payumoney.core/payumoney-sdk/7.4.0/7290cbf3d2a3e3dc4ed310bbe2c475839bea460f/payumoney-sdk-7.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">KGS-USER</string>
+    <string name="sign_up">Don\'t have an account?
+        <b>Sign Up</b>
+    </string>
+    <string name="log_in">Already have an account?
+        <b>Log In</b>
+    </string>
+
+    <string name="dialogTitle_logout">Logout</string>
+    <string name="dialogMessage_logout">Do you want to logout?</string>
+    <string name="dialogMessage_exit">Do you want to exit?</string>
+    <string name="dialogMessage_exit2">Do you want to exit without saving your content?</string>
+    <string name="dialogPositiveButtonText_logout">DONE</string>
+    <string name="dialogPositiveButtonText_subcription">Okay</string>
+    <string name="dialogPositiveButtonText_cancel">Cancel</string>
+    <string name="dialogTitle_exit">Exit</string>
+
+    <string name="facebook_app_id">2008391239379505</string>
+    <string name="fb_login_protocol_scheme">fb2008391239379505</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_long">Login</string>
+
+    <string name="error_message">Please check your internet connection</string>
+</resources>
