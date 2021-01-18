@@ -1,8 +1,8 @@
 package com.app.kgs_user.viewmodel;
 
 import androidx.lifecycle.ViewModel;
-import com.app.kgs_user.healper.NetworkHelper;
-import com.app.kgs_user.healper.NetworkHelperOther;
+
+import com.app.kgs_user.helper.NetworkHelperOther;
 import com.app.kgs_user.rest.ApiInterface;
 
 public class BaseViewModel extends ViewModel {

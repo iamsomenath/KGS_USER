@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emi_tenure_select_row_bg">
+
+    <include
+        android:id="@+id/emi_amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/amount_layout"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_emi_tenure_margin"
+        android:layout_marginLeft="@dimen/dimen_emi_tenure_margin"
+        android:layout_alignParentTop="true"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/ll_footer"
+        layout="@layout/footer_checkout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+        android:id="@+id/btn_emi_tenure_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_footer"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_emi_tenure_margin"
+        android:layout_marginRight="@dimen/dimen_emi_tenure_margin"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:text="@string/btn_continue"
+        android:textColor="@color/payumoney_white"
+        android:textSize="@dimen/dimen_17sp"
+        pptextview:bgColor="?attr/colorPrimary"
+        pptextview:borderOnly="false"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:layout_below="@id/emi_amount_layout"
+        android:layout_above="@id/btn_emi_tenure_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_emi_tenure_margin"
+        android:layout_marginLeft="@dimen/dimen_emi_tenure_margin"
+        android:background="@color/emi_tenure_select_row_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="10dp"
+            android:paddingRight="@dimen/dimen_emi_tenure_margin2" android:paddingLeft="@dimen/dimen_emi_tenure_margin" android:paddingBottom="0dp" android:orientation="vertical" android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp"
+                android:orientation="horizontal" android:layout_gravity="center_vertical" android:gravity="center_vertical" android:background="@android:color/white">
+
+                <!-- tick image -->
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10dp" android:src="@drawable/ic_done_black_24dp"/>
+
+                <!--Select EMI tenure -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emi_screen_select_tenure"/>
+
+            </LinearLayout>
+
+            <!--Bank dropdown -->
+            <RelativeLayout
+                android:id="@+id/emi_selected_bank_name" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"  android:padding="@dimen/dimen_10dp" android:clickable="true" android:focusable="true" android:background="@drawable/bg_rounded_grey_border">
+
+                <TextView android:id="@+id/tv_emi_selected_bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+
+                <!-- down arrow image -->
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:src="@drawable/down_arrow"/>
+
+            </RelativeLayout>
+
+            <!--EMI tenure table - static headings -->
+            <include
+                layout="@layout/emi_tenure_layout_header" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:background="@color/emi_tenure_select_row_bg"/>
+
+            <!--EMI tenures - dynamic values -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/emi_tenures_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

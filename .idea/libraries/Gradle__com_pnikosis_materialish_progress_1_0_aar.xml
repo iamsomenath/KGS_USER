@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.pnikosis:materialish-progress:1.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ff4e1b403fd9509a67acdf930cce72ce/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ff4e1b403fd9509a67acdf930cce72ce/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ff4e1b403fd9509a67acdf930cce72ce/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f0ed39e706490654da3e5df963e694b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f0ed39e706490654da3e5df963e694b/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f0ed39e706490654da3e5df963e694b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

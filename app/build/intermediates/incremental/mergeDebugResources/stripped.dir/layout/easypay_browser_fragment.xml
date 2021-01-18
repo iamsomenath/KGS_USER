@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:visibility="visible">
+
+
+    <LinearLayout
+        android:id="@+id/my_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+
+        <!-- Your content here -->
+        <LinearLayout
+            android:id="@+id/up_arrow_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/down_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#F2F1F1"
+            android:gravity="center"
+            android:visibility="gone" />
+        </LinearLayout>
+        <!-- Header -->
+
+        <LinearLayout
+            android:id="@+id/headerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F1F1"
+            android:orientation="vertical"
+            android:translationY="-60dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <View
+                android:id="@+id/shadow"
+                android:layout_width="fill_parent"
+                android:layout_height="2.3dp"
+                android:background="@drawable/layout_shadow"
+                android:visibility="gone">
+            </View>
+
+            <ImageView
+                android:id="@+id/down_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/down_arrow_hide" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="15dp"
+                android:src="@drawable/paytm_assist" />
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F1F1"
+                android:orientation="vertical">
+
+                <!-- autofill helper -->
+
+                <LinearLayout
+                    android:id="@+id/autoFillerHelperHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F2F1F1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/submit_password"
+                        android:textColor="#686868"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/autoFillerHelperEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.70"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:hint="Customer ID"
+                            android:inputType="textNoSuggestions"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="15dp"
+                            android:textColor="#002E6E"
+                            android:textColorHint="#686868"
+                            android:textCursorDrawable="@null"
+                            android:textSize="15sp">
+
+                            <requestFocus/>
+                        </EditText>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#a7a7a7" />
+
+                        <TextView
+                            android:id="@+id/autoFillerHelperButton"
+                            style="@style/GreyButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:layout_below="@id/autoFillerHelperEditText"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:inputType="textCapSentences"
+                            android:text="Submit"
+                            />
+                        <!--<LinearLayout
+                            android:id="@+id/autoFillerHelper"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_height="25dp"
+                            android:paddingLeft="10dp"
+                            android:gravity="right"
+                            android:visibility="gone"
+                            android:background="#F2F1F1">
+
+                            <CheckBox
+                                android:id="@+id/autoFillerCheckbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.96"
+                                android:button="@drawable/custom_checkbox"
+                                android:checked="true"
+                                android:drawablePadding="10dp"
+                                android:paddingBottom="5dp"
+                                android:text="Remember"
+                                android:textColor="#a1a1a1"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>-->
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <!-- password helper -->
+                <LinearLayout
+                    android:id="@+id/passwordHelper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.98"
+                    android:background="#F2F1F1"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/auto_fill_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/submit_password"
+                        android:textColor="#686868"
+                        android:textSize="12sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp">
+                        <EditText
+                            android:id="@+id/editTextPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="0.80"
+                            android:background="@null"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:paddingTop="10dp"
+                            android:textColor="#002E6E"
+                            android:textColorHint="#686868"
+                            android:textCursorDrawable="@null"
+                            android:textSize="15sp">
+
+                            <requestFocus/>
+                        </EditText>
+
+                        <ScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/buttonShowPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.2"
+                            android:fontFamily="sans-serif"
+                            android:gravity="right"
+                            android:inputType="textCapSentences"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:text="Show"
+                            android:textColor="#686868"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#a7a7a7">
+
+                    </View>
+                    <Button
+                        android:id="@+id/button_submit_password"
+                        style="@style/GreyButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:fontFamily="sans-serif"
+                        android:inputType="textCapSentences"
+                        android:minHeight="36dip"
+                        android:text="Submit Password"/>
+
+                </LinearLayout>
+
+
+                <!-- radio helper -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F2F1F1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="@string/select_option_pay"
+                        android:textColor="#686868"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#F2F1F1">
+
+                        <LinearLayout
+                            android:id="@+id/radioOption1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.495"
+                            android:background="#002E6E"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter" />
+
+                            <TextView
+                                android:id="@+id/radio_button1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:text="Use Password"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.01" />
+
+                        <LinearLayout
+                            android:id="@+id/radioOption2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.495"
+                            android:background="#002E6E"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                />
+
+                            <TextView
+                                android:id="@+id/radio_button2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:text="Use Password"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/radioHelper"
+                    layout="@layout/radio_selector"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+
+
+
+                <!-- proceed helper -->
+
+                <Button
+                    android:id="@+id/buttonProceed"
+                    style="@style/BlueButton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textCapSentences"
+                    android:minHeight="36dip"
+                    android:text="Continue"
+                    android:visibility="gone"/>
+
+                <!-- otp helper -->
+
+                <LinearLayout
+                    android:id="@+id/otpHelper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="12.86"
+                    android:background="#F2F1F1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/otp_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/submit_otp"
+        android:textColor="#686868"
+        android:textSize="12sp" />
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#989898"
+                        android:paddingBottom="5dp"/>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+                        <EditText
+                            android:id="@+id/editTextOtp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="0.7"
+                            android:background="@null"
+                            android:ems="10"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:hint="Waiting for OTP"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textColor="#002E6E"
+                            android:textColorHint="#686868"
+                            android:textCursorDrawable="@null"
+                            android:textSize="15sp">
+                        </EditText>
+                        <Button
+                            android:id="@+id/buttonResendOtp"
+                            style="@style/BlueButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="0.30"
+                            android:fontFamily="sans-serif"
+                            android:inputType="textCapSentences"
+                            android:minHeight="36dip"
+                            android:text="Resend OTP"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#a7a7a7" />
+
+                    <Button
+                        android:id="@+id/buttonApproveOtp"
+                        style="@style/GreyButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:layout_alignRight="@id/editTextOtp"
+                        android:enabled="false"
+                        android:fontFamily="sans-serif"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:state_enabled="false"
+                        android:text="Submit OTP"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dip"
+                android:layout_below="@id/header"
+                android:background="#F2F1F1"
+                >
+            </View>
+            <!-- autoFiller helper -->
+            <!-- net-banking-->
+
+
+
+        </LinearLayout>
+        <!-- Header -->
+        <include
+            android:id="@+id/layout_netbanking"
+            layout="@layout/netbanking"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/my_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+            <WebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:visibility="gone"
+                />
+            <View
+                android:id="@+id/overlay_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99111111"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

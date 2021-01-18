@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/img_webview_review_order_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/img_back_arrow"/>
+
+    <TextView
+        android:id="@+id/btn_webview_review_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_review_order_title_size"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/review_order_default_text"/>
+
+    <TextView
+        android:id="@+id/tv_webview_review_order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/btn_webview_review_order"
+        android:layout_toRightOf="@id/img_webview_review_order_back"
+        android:textSize="@dimen/dimen_review_order_title_size"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:text="PayUmoney" />
+
+
+</RelativeLayout>

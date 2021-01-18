@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.smarteist:autoimageslider:1.3.2@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6be78a53db5e6ede5586e33e1c3eda5/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6be78a53db5e6ede5586e33e1c3eda5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f6be78a53db5e6ede5586e33e1c3eda5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/705e6dfa4bfd4ecfb1a9b1ca94a581e9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/705e6dfa4bfd4ecfb1a9b1ca94a581e9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/705e6dfa4bfd4ecfb1a9b1ca94a581e9/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.smarteist/autoimageslider/1.3.2/459c8a02885cf1d8e6e2f60cf8d7a8875a4b4715/autoimageslider-1.3.2-javadoc.jar!/" />

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LandingPageActivity">
+
+    <com.smarteist.autoimageslider.SliderView
+            android:layout_above="@+id/login"
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="@dimen/_8sdp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="@color/colorPrimary"
+            app:sliderIndicatorUnselectedColor="@color/gray"
+            app:sliderScrollTimeInSec="20"
+            app:sliderStartAutoCycle="true">
+
+    </com.smarteist.autoimageslider.SliderView>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/login"
+            android:elevation="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_25sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_height="@dimen/_40sdp">
+
+        <TextView
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Log In"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

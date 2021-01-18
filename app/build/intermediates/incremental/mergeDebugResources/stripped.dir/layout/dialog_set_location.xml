@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:text="SET ADDRESS"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:inputType="textCapWords"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:contentDescription="@string/app_name"/>
+
+    <EditText
+            android:id="@+id/address"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/roboto_light"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:imeOptions="actionNext"
+            android:hint="Enter Address"/>
+
+    <EditText
+            android:id="@+id/location"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:imeOptions="actionNext"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:hint="Enter Nearest Landmark"/>
+
+    <EditText
+            android:id="@+id/pincode"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:imeOptions="actionDone"
+            android:fontFamily="@font/roboto_light"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:hint="Enter Pin Code"/>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.payumoney.sdkui.ui.activities.ReviewOrderActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_review_order_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_review_order_screen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:orientation="vertical">
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_24sp"
+                android:textColor="@android:color/black"
+                android:text="@string/review_order_details"/>-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_review_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/add_amount_grey"/>
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp">
+
+                <TextView
+                    android:id="@+id/review_order_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@android:color/black"
+                    android:text="Rs 150"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/review_order_total_price"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:text="@string/total"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_16sp"
+                android:text="@string/review_order_conv_fee_msg"/>-->
+
+            <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btn_review_order_go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_50dp"
+                android:paddingRight="@dimen/dimen_50dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/go_back"
+                android:textColor="@color/payumoney_white"
+                android:textSize="@dimen/dimen_17sp"
+                pptextview:bgColor="?attr/colorPrimary"
+                pptextview:borderOnly="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

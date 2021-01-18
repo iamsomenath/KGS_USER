@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/contentView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+                android:background="@drawable/rectangle4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_margin="@dimen/_1sdp"
+                    android:id="@+id/rv_ItemImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo_restaurant"
+                    app:riv_corner_radius="@dimen/_5sdp"/>
+
+            <LinearLayout
+                    android:layout_margin="@dimen/_2sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:id="@+id/tv_ItemName"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:fontFamily="@font/josefinsansregular"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:textAllCaps="true"
+                            android:text="Test"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="normal"/>
+
+                    <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:fontFamily="@font/josefinsansregular"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:textAllCaps="true"
+                            android:text="Test"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="normal"/>
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/tv_ItemDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/josefinsansregular"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="Test"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal"/>
+
+                <TextView
+                        android:id="@+id/tv_Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/josefinsanssemibold"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="Test"
+                        android:textColor="@color/cb_errorRed"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="normal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

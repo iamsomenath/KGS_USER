@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\ADMIN\\AndroidStudioProjects\\KGS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v22\\values-large-v22.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-2\\files-2.1\\6b54421263f91a844c2db05b500cfc80\\res\\values-large-v22\\values-large-v22.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,148",
+                        "endLines": "2,5",
+                        "endColumns": "92,12",
+                        "endOffsets": "143,310"
+                    }
+                }
+            ]
+        }
+    ]
+}

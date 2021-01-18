@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="match_parent"
+        tools:context=".activity.WelcomeActivity">
+
+    <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_centerHorizontal="true"
+            android:text="Welcome to\nKHANA GHAR SE"
+            android:fontFamily="@font/josefinsanssemibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:layout_centerInParent="true"
+            android:src="@drawable/login"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:text="Please turn on your GPS to find\n out better restaurant suggestions near you "
+                android:fontFamily="@font/roboto_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/turn_location"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Turn on GPS"
+                android:textColor="@color/white"
+                android:padding="@dimen/_12sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/round_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".GPSActivity">
+
+    <Button
+            android:id="@+id/buttonEnableGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable GPS"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>-->

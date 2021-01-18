@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/easypayrootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+<FrameLayout
+    android:id="@+id/easyPayTravelFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <WebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+    <!-- Travel Helper -->
+    <LinearLayout
+
+        android:id="@+id/travelHelper"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#939399"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_weight="1">
+
+
+
+        <TextView
+            android:id="@+id/leftTravelHelperView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/password_text"
+            />
+
+            </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#9e9ea5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+
+        <TextView
+            android:id="@+id/centerTravelHelperView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/easypay_hide_password"
+            android:textColor="#ffffff"
+             />
+
+            </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#9e9ea5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right">
+
+
+        <TextView
+            android:id="@+id/rightTravelHelperView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/reset_password_text"
+            android:textColor="#ffffff"
+            />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+            <View
+                android:id="@+id/overlay_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:visibility="gone"></View>
+
+
+
+
+
+</FrameLayout>
+
+    </LinearLayout>
+
+
+    <!-- Footer aligned to bottom -->
+    <!-- android:visibility="gone" -->
+    <!-- android:background="#fff" -->
+
+    <!--<LinearLayout
+        android:id="@+id/footerBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:textColor="#a1a1a1"
+        android:layout_alignParentBottom="true"
+        android:gravity="right" >
+
+        &lt;!&ndash; Your toolbar items here &ndash;&gt;
+
+
+
+
+
+
+
+    </LinearLayout>-->
+
+</RelativeLayout>

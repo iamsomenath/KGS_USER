@@ -3,7 +3,7 @@
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82a0def94964d9531c8b6ee744b211d3/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d052bca9960a75725c669bd31ddb4441/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d68f858e6c3b0e1da42a60718ca3b559/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9754211fc5a6a122915728671ff9be9e/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82a0def94964d9531c8b6ee744b211d3/AndroidManifest.xml" />
@@ -12,9 +12,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d052bca9960a75725c669bd31ddb4441/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d052bca9960a75725c669bd31ddb4441/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d052bca9960a75725c669bd31ddb4441/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d68f858e6c3b0e1da42a60718ca3b559/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d68f858e6c3b0e1da42a60718ca3b559/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d68f858e6c3b0e1da42a60718ca3b559/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9754211fc5a6a122915728671ff9be9e/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9754211fc5a6a122915728671ff9be9e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9754211fc5a6a122915728671ff9be9e/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.makeramen/roundedimageview/2.3.0/30a0f5d140791f4ade3ac418dddaf0d59ca694cc/roundedimageview-2.3.0-javadoc.jar!/" />

@@ -6,6 +6,7 @@ import com.android.volley.*
 import com.android.volley.toolbox.StringRequest
 import com.app.kgs_user.utils.Constants
 import com.app.kgs_user.utils.RequestQueueSingleton
+import com.app.kgs_user.utils.SessionManager
 import java.util.*
 
 
@@ -60,6 +61,8 @@ internal class SignupInterceptor {
                 params["contact"] = contact
                 params["email"] = email
                 params["password"] = password
+                params["dev_key"] = SessionManager(activity).getDevKey!!
+                Log.d("TSEST", params.toString())
                 return params
             }
         }

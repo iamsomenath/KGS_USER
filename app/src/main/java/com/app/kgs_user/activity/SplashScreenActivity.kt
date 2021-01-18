@@ -15,6 +15,10 @@ import cn.pedant.SweetAlert.SweetAlertDialog
 import com.app.kgs_user.R
 import com.app.kgs_user.utils.PermissionUtil
 import com.app.kgs_user.utils.SessionManager
+import com.google.android.gms.tasks.Task
+import com.google.firebase.FirebaseApp
+import com.google.firebase.iid.FirebaseInstanceId
+import com.google.firebase.iid.InstanceIdResult
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -29,6 +33,7 @@ class SplashScreenActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
+        FirebaseApp.initializeApp(this)
         setContentView(R.layout.activity_splash_screen)
 
         if (Build.VERSION.SDK_INT >= 23) {
@@ -73,6 +78,8 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun init() {
 
         sessionManager = SessionManager(this)
+
+        fcmToken
 
         Handler().postDelayed({
             if (sessionManager.isLoggedIn) {
@@ -126,6 +133,18 @@ class SplashScreenActivity : AppCompatActivity() {
         }
     }
 
+    private val fcmToken: Unit
+        get() {
+            FirebaseInstanceId.getInstance().instanceId
+                .addOnCompleteListener { task: Task<InstanceIdResult> ->
+                    if (!task.isSuccessful) {
+                        return@addOnCompleteListener
+                    }
+                    // Get new Instance ID token
+                    val token = task.result!!.token
+                    SessionManager(this).saveDevKey(token)
+                }
+        }
 
     companion object {
 

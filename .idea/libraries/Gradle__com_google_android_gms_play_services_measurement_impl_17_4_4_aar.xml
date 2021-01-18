@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement-impl:17.4.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17d2b6730dfd0158371067eb2e0b4467/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17d2b6730dfd0158371067eb2e0b4467/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17d2b6730dfd0158371067eb2e0b4467/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c704d868546cc15dca6e3f4ef641286/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c704d868546cc15dca6e3f4ef641286/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c704d868546cc15dca6e3f4ef641286/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-impl/17.4.4/fa3dc2c53582ff1200eb3f88e59cae32dfc1b949/play-services-measurement-impl-17.4.4-javadoc.jar!/" />

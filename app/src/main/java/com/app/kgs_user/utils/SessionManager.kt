@@ -56,6 +56,9 @@ constructor(internal var _context: Context) {
     val getId: String?
         get() = pref.getString(KEY_ID, "")
 
+    val getDevKey: String?
+    get() = pref.getString(DEV_KEY, "")
+
     init {
         pref = _context.getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         editor = pref.edit()
@@ -110,6 +113,11 @@ constructor(internal var _context: Context) {
         editor.apply()
     }
 
+    fun saveDevKey(dev_key: String?) {
+        editor.putString(DEV_KEY, dev_key)
+        editor.commit()
+    }
+
     companion object {
         // LogCat tag
         private val TAG = SessionManager::class.java.simpleName
@@ -129,6 +137,7 @@ constructor(internal var _context: Context) {
         private val KEY_CITY = "city"
         private val KEY_LAT = "country"
         private val USER_TYPE = "type"
+        private val DEV_KEY = "dev_key"
 
         private val FULL_ADDR = "addr"
         private val LOCATION = "location"

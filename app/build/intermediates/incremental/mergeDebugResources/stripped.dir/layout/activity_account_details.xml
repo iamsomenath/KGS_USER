@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/white_background"
+        android:layout_height="match_parent"
+        tools:context=".activity.AccountDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/iv_accountDetails_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:padding="@dimen/_6sdp"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_left_back"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_accountDetails_back"
+                    app:layout_constraintStart_toEndOf="@+id/iv_accountDetails_back"
+                    app:layout_constraintTop_toTopOf="@+id/iv_accountDetails_back">
+
+                <TextView
+                        android:id="@+id/tv_dashboard_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="Account Details"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/tv_userMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_colo_black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:fontFamily="@font/roboto_light"
+                android:textStyle="bold"
+                android:text="+91-9647483265" />
+
+        <LinearLayout
+                android:layout_marginTop="@dimen/_2sdp"
+                android:id="@+id/layout_gotoCompleteSetup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv_complete_account_setup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_8sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Complete account setup"/>
+
+            <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:tint="@color/colorPrimaryDark"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:src="@drawable/ic_rightback_color"/>
+
+        </LinearLayout>
+
+        <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/orders_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/iv_accountDetails_savedCards"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:padding="@dimen/_6sdp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_order_nav"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@+id/iv_accountDetails_savedCards"
+                        app:layout_constraintStart_toEndOf="@+id/iv_accountDetails_savedCards"
+                        app:layout_constraintTop_toTopOf="@+id/iv_accountDetails_savedCards">
+
+                    <TextView
+                            android:id="@+id/tv_accountDetails_cards"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="My Orders"
+                            android:textColor="@color/text_colo_black"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignEnd="@dimen/_16sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_18sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_rightback"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/linearLayout4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wallet_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/wallet"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:padding="@dimen/_6sdp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_wallet_nav"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                        android:id="@+id/linearLayoutWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@+id/wallet"
+                        app:layout_constraintStart_toEndOf="@+id/wallet"
+                        app:layout_constraintTop_toTopOf="@+id/wallet">
+
+                    <TextView
+                            android:id="@+id/tv_Wallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="My Wallet"
+                            android:textColor="@color/text_colo_black"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignEnd="@dimen/_16sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_18sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_rightback"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutWallet"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/linearLayoutWallet" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/accountDetails_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/iv_accountDetails_about"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:padding="@dimen/_6sdp"
+                        android:src="@drawable/about1"
+                        android:tint="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@+id/iv_accountDetails_about"
+                        app:layout_constraintStart_toEndOf="@+id/iv_accountDetails_about"
+                        app:layout_constraintTop_toTopOf="@+id/iv_accountDetails_about">
+
+                    <TextView
+                            android:id="@+id/tv_accountDetails_about"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="About"
+                            android:textColor="@color/text_colo_black"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignEnd="@dimen/_16sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_18sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_rightback"
+                        app:layout_constraintBottom_toBottomOf="@+id/accountDetails_about"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/accountDetails_about" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_contactus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/iv_contactus"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:padding="@dimen/_6sdp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/contactus1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                        android:id="@+id/contactus_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@+id/iv_contactus"
+                        app:layout_constraintStart_toEndOf="@+id/iv_contactus"
+                        app:layout_constraintTop_toTopOf="@+id/iv_contactus">
+
+                    <TextView
+                            android:id="@+id/tv_contactus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="Contact Us"
+                            android:textColor="@color/text_colo_black"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <ImageView
+                        android:id="@+id/iv_back_arrow"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignEnd="@dimen/_16sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_18sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_rightback"
+                        app:layout_constraintBottom_toBottomOf="@+id/contactus_layout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/contactus_layout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color"/>
+
+        <LinearLayout
+                android:id="@+id/layout_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/iv_accountDetails_logout"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:padding="@dimen/_6sdp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/logout1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@+id/iv_accountDetails_logout"
+                        app:layout_constraintStart_toEndOf="@+id/iv_accountDetails_logout"
+                        app:layout_constraintTop_toTopOf="@+id/iv_accountDetails_logout">
+
+                    <TextView
+                            android:id="@+id/tv_accountDetails_logout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="Logout"
+                            android:textColor="@color/text_colo_black"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignEnd="@dimen/_16sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_18sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_rightback"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/linearLayout6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -23,4 +23,5 @@
     <string name="com_facebook_loginview_log_in_button_long">Login</string>
 
     <string name="error_message">Please check your internet connection</string>
+    <string name="default_notification_channel_id">com.app.kgs_user</string>
 </resources>

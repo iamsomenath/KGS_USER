@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/back_net_banking"
+    android:orientation="vertical"
+    tools:visibility="visible">
+
+
+    <LinearLayout
+        android:id="@+id/ll_nb_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/et_nb_userId"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="15dp"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/rember"
+            android:textColor="#444444"
+            android:textColorHint="#444444"
+            android:textStyle="normal"
+            tools:visibility="gone" />
+        <TextView
+            android:id="@+id/img_pwd_show"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_gravity="left|center_vertical|center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0.4"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:text="Show "
+            android:textColor="#444444"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_nb_password"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_weight="0.6"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:enabled="false"
+            android:fontFamily="sans-serif"
+            android:inputType="textWebPassword|textCapSentences|textMultiLine"
+            android:saveEnabled="true"
+            android:textColor="#444444"
+            android:textColorHint="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+
+        <Button
+            android:id="@+id/nb_bt_submit"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="0.5"
+            android:background="@color/submit_easy_pay"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal|center_vertical"
+            android:letterSpacing="0.02"
+            android:padding="8dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/paytm_assist"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/nb_bt_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.4"
+        android:background="@color/submit_easy_pay"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:letterSpacing="0.02"
+        android:padding="8dp"
+        android:text="PAY"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</LinearLayout>

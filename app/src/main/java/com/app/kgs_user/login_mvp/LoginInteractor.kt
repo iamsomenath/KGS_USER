@@ -1,10 +1,12 @@
 package com.app.kgs_user.login_mvp
 
 import android.app.Activity
+import android.util.Log
 import com.android.volley.*
 import com.android.volley.toolbox.StringRequest
 import com.app.kgs_user.utils.Constants
 import com.app.kgs_user.utils.RequestQueueSingleton
+import com.app.kgs_user.utils.SessionManager
 import java.util.*
 
 
@@ -54,6 +56,8 @@ internal class LoginInteractor {
                 val params = HashMap<String, String>()
                 params["contact"] = contact
                 params["password"] = password
+                params["dev_key"] = SessionManager(activity).getDevKey!!
+                Log.d("TSEST", params.toString())
                 return params
             }
         }
